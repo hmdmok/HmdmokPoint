@@ -40,6 +40,9 @@ public class Login extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(850, 450));
@@ -47,7 +50,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setPreferredSize(new java.awt.Dimension(400, 450));
 
-        jPanel3.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
         jPanel3.setPreferredSize(new java.awt.Dimension(390, 90));
 
         jLabel1.setFont(new java.awt.Font("Calibri", 1, 36)); // NOI18N
@@ -75,24 +78,33 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.add(jPanel3);
 
-        jPanel4.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel4.setBackground(new java.awt.Color(204, 204, 204));
         jPanel4.setPreferredSize(new java.awt.Dimension(390, 130));
 
+        jPanel6.setBackground(new java.awt.Color(204, 204, 204));
         jPanel6.setPreferredSize(new java.awt.Dimension(90, 40));
         jPanel6.setLayout(new java.awt.BorderLayout());
 
-        jLabel2.setText("إسم المستخدم    ");
+        jLabel2.setBackground(new java.awt.Color(102, 204, 255));
+        jLabel2.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel2.setText("إسم المستخدم      ");
         jPanel6.add(jLabel2, java.awt.BorderLayout.LINE_END);
 
+        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jPanel6.add(jTextField1, java.awt.BorderLayout.CENTER);
 
+        jPanel7.setBackground(new java.awt.Color(204, 204, 204));
         jPanel7.setPreferredSize(new java.awt.Dimension(90, 40));
         jPanel7.setLayout(new java.awt.BorderLayout());
 
-        jLabel3.setText("كلمة السر            ");
+        jLabel3.setBackground(new java.awt.Color(204, 204, 204));
+        jLabel3.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel3.setText("كلمة السر              ");
         jPanel7.add(jLabel3, java.awt.BorderLayout.LINE_END);
 
+        jPasswordField1.setBackground(new java.awt.Color(255, 255, 255));
+        jPasswordField1.setForeground(new java.awt.Color(51, 51, 51));
         jPasswordField1.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jPasswordField1.setText("jPasswordField1");
         jPanel7.add(jPasswordField1, java.awt.BorderLayout.CENTER);
@@ -115,14 +127,16 @@ public class Login extends javax.swing.JFrame {
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel4);
 
-        jPanel5.setBackground(new java.awt.Color(153, 153, 153));
+        jPanel5.setBackground(new java.awt.Color(204, 204, 204));
         jPanel5.setPreferredSize(new java.awt.Dimension(390, 90));
 
+        jButton1.setBackground(new java.awt.Color(0, 153, 204));
+        jButton1.setForeground(new java.awt.Color(51, 51, 51));
         jButton1.setText("تسجيل الدخول");
         jButton1.setPreferredSize(new java.awt.Dimension(110, 40));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -131,6 +145,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        jLabel4.setForeground(new java.awt.Color(0, 51, 204));
         jLabel4.setText("نسيت كلمة السر");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -162,16 +177,46 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jPanel1, java.awt.BorderLayout.EAST);
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setForeground(new java.awt.Color(102, 102, 102));
+        jPanel2.setMaximumSize(new java.awt.Dimension(400, 800));
+        jPanel2.setPreferredSize(new java.awt.Dimension(700, 750));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hmdmokpoint/HmdmokPoint.png"))); // NOI18N
+
+        jScrollPane1.setBorder(null);
+        jScrollPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(255, 255, 255));
+        jTextArea1.setColumns(30);
+        jTextArea1.setForeground(new java.awt.Color(102, 102, 102));
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("هو تطبيق سطح المكتب الذي يهدف إلى تحسين وتسهيل إدارة نقاط بيع لحوم الدجاج. يقدم هذا التطبيق حلاً شاملاً لإدارة جميع جوانب عملك في مجال بيع اللحوم، من إدارة الممولين والفواتير إلى تتبع المخزون وخدمة الزبائن بفعالية. يهدف التطبيق إلى تسهيل عمليات البيع والإدارة، مما يؤدي إلى تحسين تجربة العملاء وزيادة الكفاءة العامة للمؤسسة.\n");
+        jTextArea1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jScrollPane1.setViewportView(jTextArea1);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 464, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(135, 135, 135)
+                        .addComponent(jLabel6))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 450, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
@@ -224,6 +269,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -232,6 +278,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }
